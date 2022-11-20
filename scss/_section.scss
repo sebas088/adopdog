@@ -1,0 +1,253 @@
+@use "colors";
+
+/* INICIO SECTION */
+section{
+    background-color: $color-1-group-1;
+    width: 100%;
+    height: 100vh;
+    border-radius: 5px;
+    text-shadow: 0px 1px 1px $color-5-group-1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+}
+
+figcaption{
+    font-family:'mifuente';
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.article_sections {
+    float: left;
+    display: inline;
+    margin-left: 120px;
+    margin-left: 50px;
+    margin-top: 60px;
+    
+    /* background-color: tomato; */
+    -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+
+    &:hover{
+        -webkit-transform:scale(1.2);
+    }
+}
+
+
+
+.img-sections{
+	border:solid $color-5-group-1;
+	border-radius:15px;
+	box-shadow: $color-6-group-1 5px 5px 5px;
+    width: 256px;
+    height: 256px;
+}
+
+/* INICIO SECTION SLIDER */
+.container__slider {
+    width: 90%;
+    height: 400px;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 80px;
+    overflow: hidden;
+    position: relative;
+    border:solid $color-7-group-1;
+	border-radius:15px;
+	box-shadow: $color-6-group-1 5px 5px 5px;
+}
+.slider {
+    display: flex;
+    height: 400px;
+    width: 600%;
+    margin-left: -100%;
+
+    &__section {
+        width: 100%;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: $color-9-group-1;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        font-weight: bold;
+        font-family: monospace;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            background: $color-8-group-1;
+        }
+
+        &--left {
+            left: 10px;
+        }
+        &--right {
+            right: 10px;
+        }
+    }
+}
+
+
+
+
+#images-slider{
+    /* width: 400px; */
+    margin-left: 225px;
+    
+
+}
+/* FIN SECTION SLIDER */
+
+/* INICIO SECTION DOGS */
+.title_dogs {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 110px;
+    text-shadow: 0px 4px 4px $color-5-group-1;
+    letter-spacing: 0.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: rgb(191, 176, 174); */
+
+}
+#line_dogs {
+    border: 1px solid $color-5-group-1;
+    height: 0.1px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.article_section_dogs {
+    float: left;
+    margin-left: 100px;
+    margin-top: 60px;
+    /* background-color: tomato; */
+    -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+    &:hover{
+        -webkit-transform:scale(1.2);
+    }
+}
+
+#img_section_dogs{
+	border:solid $color-5-group-1;
+	border-radius:15px;
+	box-shadow: $color-6-group-1 5px 5px 5px;
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+}
+
+figcaption{
+    font-family:'mifuente';
+    text-align: center;
+    margin-top: 10px;
+    border: solid $color-5-group-1;
+    border-radius: 9px;
+    box-shadow: $color-6-group-1 5px 5px 5px;
+}
+#enlaces_dogs {
+    text-decoration: none;
+    color: $color-10-group-1;
+}
+/* FIN SECTION DOGS */
+
+/* INICIO SECTION ADOPTAR */
+
+    .img_adoptar {
+        width: 70%;
+        height: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        object-fit: cover;
+        border:solid $color-5-group-1;
+	    border-radius:15px;
+	    box-shadow: $color-6-group-1 5px 5px 5px;
+        display: block;
+    }
+
+    #h2_form {
+        text-align: center;
+    }
+
+    .formulario {
+        /* background-color: tomato; */
+        width: 100%;
+        max-width: 1500px;
+        height: 100vh;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        padding-top:40px;
+        padding-left: 100px;
+        padding-right: 100px;
+        border:2px $color-12-group-1 solid;
+        border-radius: 5px;
+        position: relative;
+    }
+
+
+    .casilla {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    #nombre {
+        @extend .casilla;
+    }
+
+    #apellido {
+        @extend .casilla;
+    }
+
+    #email {
+        @extend .casilla;
+    }
+
+    #tel {
+        @extend .casilla;
+    }
+
+    #direccion {
+        @extend .casilla;
+    }
+
+    #requisitos {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: inline-block;
+    }
+
+    #condiciones {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    #enviar {
+        
+        margin: auto;
+        width: 150px;
+        height: 40px;
+        border-radius: 9px;
+        
+    }
+
+
+
+/* FIN SECTION ADOPTAR */
+
+/* FIN SECTION*/
