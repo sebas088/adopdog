@@ -6,7 +6,11 @@
 }
 * {
     box-sizing: border-box;
-    max-width: 100%;
     
 }
-@import "header", "section", "footer", "font";
+@import "colors";
+@import "font";
+@import "header";
+@import "section";
+@import "footer";
+@import "body";

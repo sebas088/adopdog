@@ -4,8 +4,23 @@
   padding: 0; }
 
 * {
-  box-sizing: border-box;
-  max-width: 100%; }
+  box-sizing: border-box; }
+
+/*header, section, footer*/
+/*header, nav*/
+/*botones*/
+/*body*/
+/*texto, enlaces, menu, bordes*/
+/*box shadow*/
+/*slider*/
+/*boton slider*/
+/*boton slider*/
+/*enlaces dogs*/
+/*redes sociales*/
+/*formulario*/
+@font-face {
+  font-family: 'mifuente';
+  src: url("../sources/fonts/lexend-zetta-regular.ttf"); }
 
 /*header, section, footer*/
 /*header, nav*/
@@ -35,13 +50,18 @@ header {
 /* INICIO LOGO */
 h1 {
   font-family: 'mifuente';
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   line-height: 200px;
   font-weight: 400;
   text-shadow: 0px 4px 4px black;
-  display: inline;
-  margin-left: 20px; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.decoracion_enlaces {
+  text-decoration: none;
+  color: black; }
 
 span {
   color: #27ce37; }
@@ -111,18 +131,6 @@ span {
   /* FIN RESPONSIVE HEADER */ }
 
 /* FIN RESPONSIVE */
-/*header, section, footer*/
-/*header, nav*/
-/*botones*/
-/*body*/
-/*texto, enlaces, menu, bordes*/
-/*box shadow*/
-/*slider*/
-/*boton slider*/
-/*boton slider*/
-/*enlaces dogs*/
-/*redes sociales*/
-/*formulario*/
 /* INICIO SECTION */
 section {
   background-color: antiquewhite;
@@ -139,14 +147,19 @@ figcaption {
   text-align: center;
   margin-bottom: 10px; }
 
+.container_sections {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; }
+
 .article_sections {
-  float: left;
-  display: inline;
-  margin-left: 120px;
-  margin-left: 50px;
-  margin-top: 60px;
+  margin: 25px;
+  margin-top: 40px;
   /* background-color: tomato; */
-  -webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s; }
+  -webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s;
+  text-decoration: none;
+  color: black; }
   .article_sections:hover {
     -webkit-transform: scale(1.2); }
 
@@ -208,6 +221,9 @@ figcaption {
 
 /* FIN SECTION SLIDER */
 /* INICIO SECTION DOGS */
+.article_dogs {
+  margin-left: 30px; }
+
 .title_dogs {
   text-align: center;
   font-size: 30px;
@@ -215,9 +231,10 @@ figcaption {
   line-height: 110px;
   text-shadow: 0px 4px 4px black;
   letter-spacing: 0.2em;
-  margin-top: 10px;
-  margin-bottom: 10px;
   /* background-color: rgb(191, 176, 174); */ }
+
+#color_dogs {
+  color: #5ad066; }
 
 #line_dogs {
   border: 1px solid black;
@@ -226,8 +243,7 @@ figcaption {
   margin-bottom: 150px; }
 
 .article_section_dogs {
-  float: left;
-  margin-left: 100px;
+  margin: 15px;
   margin-top: 60px;
   /* background-color: tomato; */
   -webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s; }
@@ -307,6 +323,18 @@ figcaption {
   height: 40px;
   border-radius: 9px; }
 
+/*header, section, footer*/
+/*header, nav*/
+/*botones*/
+/*body*/
+/*texto, enlaces, menu, bordes*/
+/*box shadow*/
+/*slider*/
+/*boton slider*/
+/*boton slider*/
+/*enlaces dogs*/
+/*redes sociales*/
+/*formulario*/
 /* FIN SECTION ADOPTAR */
 /* FIN SECTION*/
 @use "import";
@@ -366,6 +394,23 @@ figcaption {
       font-size: 15px; }
 
 /* FIN FOOTER */
-@font-face {
-  font-family: 'mifuente';
-  src: url("../sources/fonts/lexend-zetta-regular.ttf"); }
+body {
+  background-color: #bbb0a1;
+  margin-right: 10px;
+  overflow-y: scroll;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/*header, section, footer*/
+/*header, nav*/
+/*botones*/
+/*body*/
+/*texto, enlaces, menu, bordes*/
+/*box shadow*/
+/*slider*/
+/*boton slider*/
+/*boton slider*/
+/*enlaces dogs*/
+/*redes sociales*/
+/*formulario*/

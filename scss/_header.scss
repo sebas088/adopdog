@@ -18,13 +18,19 @@ header{
 /* INICIO LOGO */
 h1 {
     font-family:'mifuente';
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     line-height: 200px;
     font-weight: 400;
     text-shadow: 0px 4px 4px $color-5-group-1;
-    display: inline;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+.decoracion_enlaces{
+    text-decoration: none;
+    color: $color-5-group-1;
 }
 span {
     color: $color-2-group-1;
