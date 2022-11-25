@@ -57,7 +57,8 @@ h1 {
   text-shadow: 0px 4px 4px black;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  margin-left: 30px; }
 
 .decoracion_enlaces {
   text-decoration: none;
