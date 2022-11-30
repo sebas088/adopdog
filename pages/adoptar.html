@@ -49,23 +49,42 @@
                 <h2 id="h2_form">
                     Rellena el formulario y ven por tú peludito
                 </h2>
-                <form name="registro_usuario" method="get" >
+                <form class="form" name="registro_usuario" method="get">
                     
-                    
+                    <div class="form__container">
+                        <div class="form__group">
                             <label for="nombre" id="nombre">Nombre:
                             <input type="text" name="nombre" id="nombre" autocomplete="off"></label>
-                            
-                            <label for="apellido">Apellido:
+                        </div>
+                    </div>
+                    
+                    <div class="form__container">
+                        <div class="form__group">
+                            <label for="apellido" id="apellido">Apellido:
                             <input type="text" name="apellido" id="apellido" autocomplete="off"></label>
-                            
-                            <label for="email">Correo electronico:
-                            <input type="email" name="email" id="email"></label>
-                            
-                            <label for="tel">Telefono:
-                            <input type="number" name="tel" id="tel"></label>
+                        </div>
+                    </div>
 
-                            <label for="direccion">Direccion:
-                            <input type="text" name="direccion" id="direccion"></label>
+                    <div class="form__container">
+                        <div class="form__group">
+                            <label for="correo" id="correo">Correo electronico:
+                            <input type="text" name="correo" id="correo" autocomplete="off"></label>
+                        </div>
+                    </div>
+
+                    <div class="form__container">
+                        <div class="form__group">
+                            <label for="telefono" id="telefono">Telefono:
+                            <input type="text" name="telefono" id="telefono" autocomplete="off"></label>
+                        </div>
+                    </div>
+
+                    <div class="form__container">
+                        <div class="form__group">
+                            <label for="direccion" id="direccion">Dirección:
+                            <input type="text" name="direccion" id="direccion" autocomplete="off"></label>
+                        </div>
+                    </div>
                             
                             <input type="checkbox" name="requisitos" id="requisitos" required value="requisitos"></label>
                             <label for="requisitos">Cumples con los requisitos? Se comprobaran antes de entregarte a tu peludito.<br>
