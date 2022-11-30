@@ -110,6 +110,7 @@ span {
   .esconder-menu {
     display: block; }
   .menu {
+    list-style: none;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -123,6 +124,8 @@ span {
     .menu a {
       display: block;
       padding: 20px; }
+    .menu ul {
+      list-style: none; }
   .esconder-menu {
     position: absolute;
     top: 40px;
