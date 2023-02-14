@@ -1,0 +1,326 @@
+/* INICIO SECTION */
+section{
+    background-color: $color-8-group-1;
+    width: 100%;
+    height: 100vh;
+    border-radius: 5px;
+    text-shadow: 0px 1px 1px $color-5-group-1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+}
+
+figcaption{
+    font-family:'mifuente';
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container_sections{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.article_sections {
+    margin: 25px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    /* background-color: tomato; */
+    -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+
+    &:hover{
+        -webkit-transform:scale(1.2);
+    }
+    text-decoration: none;
+    color: $color-5-group-1;
+}
+
+
+
+.img-sections{
+	border:solid $color-5-group-1;
+	border-radius:15px;
+	box-shadow: $color-6-group-1 5px 5px 5px;
+    width: 256px;
+    height: 256px;
+}
+
+/* INICIO SECTION SLIDER */
+.container__slider {
+    width: 90%;
+    height: 400px;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 80px;
+    overflow: hidden;
+    position: relative;
+    border:solid $color-7-group-1;
+	border-radius:15px;
+	box-shadow: $color-6-group-1 5px 5px 5px;
+}
+.slider {
+    display: flex;
+    height: 400px;
+    width: 600%;
+    margin-left: -100%;
+
+    &__section {
+        width: 100%;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: $color-9-group-1;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        font-weight: bold;
+        font-family: monospace;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover {
+            background: $color-8-group-1;
+        }
+
+        &--left {
+            left: 10px;
+        }
+        &--right {
+            right: 10px;
+        }
+    }
+}
+
+
+
+
+#images-slider{
+    /* width: 400px; */
+    margin-left: 225px;
+    
+
+}
+/* FIN SECTION SLIDER */
+
+
+/* INICIO SECTION DOGS */
+.article_dogs{
+    margin-left: 30px;
+}
+
+.title_dogs {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 110px;
+    text-shadow: 0px 4px 4px $color-5-group-1;
+    letter-spacing: 0.2em;
+    /* background-color: rgb(191, 176, 174); */
+    
+}
+#color_dogs{
+    color: $color-3-group-1;
+    font-size:45px;
+}
+#line_dogs {
+    border: 1px solid $color-5-group-1;
+    height: 0.1px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.article_section_dogs {
+    margin: 15px;
+    margin-top: 60px;
+    
+    /* background-color: tomato; */
+    -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+    &:hover{
+        -webkit-transform:scale(1.2);
+    }
+}
+
+#img_section_dogs{
+	border:solid $color-5-group-1;
+	border-radius:15px;
+	box-shadow: $color-6-group-1 5px 5px 5px;
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+}
+
+figcaption{
+    font-family:'mifuente';
+    text-align: center;
+    margin-top: 10px;
+    border: solid $color-5-group-1;
+    border-radius: 9px;
+    box-shadow: $color-6-group-1 5px 5px 5px;
+}
+#enlaces_dogs {
+    text-decoration: none;
+    color: $color-10-group-1;
+}
+/* FIN SECTION DOGS */
+
+/* INICIO SECTION ADOPTAR */
+
+    .ul_form{
+        list-style: none;
+    }
+
+
+    .img_adoptar {
+        width: 70%;
+        height: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        object-fit: cover;
+        border:solid $color-5-group-1;
+	    border-radius:15px;
+	    box-shadow: $color-6-group-1 5px 5px 5px;
+        display: block;
+    }
+
+
+
+    
+
+    .form {
+        background-color: $color-8-group-1;
+        margin: auto;
+        width: 100%;
+        max-width: 400px;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: $color-6-group-1 5px 5px 5px;
+    }
+
+    .form__container{
+        margin-top: 3em;
+        display: grid;
+        gap: 2.5em;
+    }
+
+    .form__group{
+        position: relative;
+        --color: $color-5-group-1;
+    }
+
+    .form__input{
+        width: 100%;
+        background: none;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        padding: .6em .3em;
+        border: 1px;
+        outline: none;
+        border-bottom: 1px solid var(--color);
+        margin-top: 10px;
+    }
+
+    .form__input:focus + .form__label{
+        transform: translateY(-12px) scale(.7);
+        transform-origin: left top;
+        color: rgb(0, 0, 0);
+    }
+
+    .form__label{
+        color: var(--color);
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transform: translateY();
+        transition: transform .5s, color .3s;
+    }
+
+
+    #requisitos {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: inline-block;
+    }
+
+    #condiciones {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    #enviar {
+        
+        margin: auto;
+        width: 150px;
+        height: 40px;
+        border-radius: 9px;
+        
+    }
+
+
+.requisitos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    ol{
+        margin-left: 40px;
+    }
+    li{
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    ul {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 945px) and (min-width: 684px) {
+    .requisitos{
+        margin-top: 500px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 683px) and (min-width: 300px) {
+    .requisitos{
+        margin-top: 600px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 419px){
+    .elementos{
+        margin-top: 630px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 548px) and (min-width: 420px){
+    .elementos{
+        margin-top: 500px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 1025px) and (min-width: 548px){
+    .elementos{
+        margin-top: 300px;
+        flex-direction: column;
+    }
+}
+/* FIN SECTION ADOPTAR */
+@import "colors";
+
+
+/* FIN SECTION*/

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="estilos.css">
+
+    
+    <title>Mis libros</title>
+</head>
+<body>
+    
+    <!--Elementos para ejempificar teoría:-->
+    <!-- <h5>Bienvenidos a Coder!! </h5>
+    <h3 id="titulo" >Clase 5 - DOM y eventos</h3>
+    <h4 class="fecha">21 de enero de 2023</h4>
+    <h5 id="jornada" class="">Hermosa jornada, comenzamos a trabajar con el navegador!</h5>
+    <h5>Hola a todos  :D</h5>
+    <br><br><br><br> -->
+
+    <!--etiquetas para query selector-->
+    <!-- <ul id="listaPaises">
+        <li class="paises">Uruguay</li>
+        <li class="paises">Chile</li>
+        <li class="paises">Ecuador</li>
+    </ul>
+
+    <ul id="listaCiudades">
+        <li class="ciudades">Buenos Aires</li>
+        <li class="ciudades">Caracas</li>
+        <li class="ciudades">Medellín</li>
+        <li class="ciudades">Lima</li>
+    </ul> -->
+
+    <!--HTML clase 9 para ejemplos teoricos-->
+    <!-- <h5>Tercera forma - Directo HTML</h5>
+    <button onclick="saludoComi34150()">Evento con atributo HTML</button>
+    <br><br>
+    <button ondblclick="alert('Nuestro segundo evento')">Evento directo desde HTML</button>
+    <div onmouseover="alert('Perdiste, no tocar!')" style="font-size: 30px; width: 150px;">
+        No tocar
+    </div>   -->
+    <!--<br><br>
+    <h5>Segunda forma - Semantica</h5>
+    <input style="border: 1px solid black" type="text"id="nombreAlumno"  placeholder="Ingrese su nombre">
+    <button id="evento-semantico">Evento con manejador semántico</button><br><br>
+    
+    <h5>Primera forma - Eventos múltiples</h5>
+    <button id="evento-multiple" >Evento con manejador múltiple</button>
+    <br><br><br><br><br><br><br><br><br><br> -->
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mis Libros</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <form class="d-flex">
+                <input id="buscador"class="form-control me-2" placeholder="" aria-label="Search">
+                <button id="btnBuscar" class="btn btn-outline-success">Buscar</button>
+              </form> 
+              
+            </ul>
+            <ul>
+              <select id="selectOrden" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Ordenar por:</option>
+                <option value="1">Mayor a menor</option>
+                <option value="2">Menor a mayor</option>
+                <option value="3">Alfabeticamente</option>
+              </select>
+            </ul>
+            <ul style="list-style: none;"className="navbar-nav me-auto">  
+              <li className="nav-item " >
+                  <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito" class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
+              </li>
+          </ul>
+           
+          </div>
+          <div>
+              
+          </div>
+        </div> 
+      </nav>
+
+      
+      
+      
+
+      
+
+      <!--ejemplos cards-->
+            <!-- Card sin CSS-->
+            <!-- <article class="">
+                <h3>El aleph</h3>
+                <img src="assets/AlephBorges.jpg" height="400px" width="250px" alt="">
+                <div class="">
+                    <p>Jorge Luis Borges</p>
+                    <p>Precio: 900</p>
+                    <a href="" target="blank">Ver más</a>
+                </div>
+                    
+            </article> -->
+
+
+                <!--Card con CSS-->
+                <!-- <article class="card">
+                    <h3 class="tituloCard">El aleph</h3>
+                    <img src="assets/AlephBorges.jpg"  alt="">
+                    <div class="content">
+                        <p class="autorCard">Jorge Luis Borges</p>
+                        <p class="precioCard">Precio: 900</p>
+                        <a href="" target="blank">Agregar al carrito</a>
+                    </div>
+                        
+                </article> -->
+
+                <!-- <div id="1" class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" style="height: 200px;"src="assets/AlephBorges.jpg" alt="Aleph de Jorge Luis Borges">
+                    <div class="card-body">
+                        <h4 class="card-title"></h4>
+                        <p>Autor: Jorge Luis Borges</p>
+                        <p class="">Precio: 900</p>
+                    <button id="" class="btn btn-outline-success">Agregar al carrito</button>
+                    </div>
+                </div>  
+
+                <div id="2" class="card" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" style="height: 200px;"src="assets/CienSoledadMarquez.jpg" alt="Aleph de Jorge Luis Borges">
+                    <div class="card-body">
+                        <h4 class="card-title"></h4>
+                        <p>Autor: Gabriel García MArquez</p>
+                        <p class="">Precio: 4500</p>
+                    <button id="" class="btn btn-outline-success">Agregar al carrito</button>
+                    </div>
+                </div> -->
+    
+                
+    <form>
+        <label for="titulo">Ingrese titulo:</label><br>
+        <input type="text" id="tituloInput" name="titulo" style="border: 1px solid black"><br>
+        <label for="autor">Ingrese autor:</label><br>
+        <input type="text" id="autorInput" name="autor" style="border: 1px solid black"><br>
+        <label for="precio">Ingrese precio:</label><br>
+        <input type="text" id="precioInput" name="precio" style="border: 1px solid black"><br>
+            
+    </form>
+        
+        <button id="guardarLibroBtn" class="btn btn-success mt-3">Guardar libro</button>
+        <br><br>
+            
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <button id="verCatalogo" class="btn btn-success">Ver Catálogo</button>
+                </div>
+                <div class="col-3">
+                    <button id="ocultarCatalogo" class="btn btn-success">Ocultar Catálogo</button>
+                </div>
+            
+            </div>
+    </div>      
+    
+    
+    <div class="container">
+        <div id="libros" class="row"></div>
+    </div>       
+<!--Script de Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+</script>
+<!--Archivo JS propio-->
+<script src="clase5.js"></script>
+</body>
+</html>

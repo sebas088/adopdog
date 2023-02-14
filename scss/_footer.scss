@@ -1,0 +1,83 @@
+@use "import";
+
+/* INICIO FOOTER */
+.footer{
+    width: 100%;
+    background-color: $color-8-group-1;
+    margin-top: 10px;
+    position: relative;
+
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+
+        .box{
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 250px;
+                }
+            }
+            h2{
+                margin-bottom: 25px;
+                font-size: 25px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+        }
+
+        .red-social{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                margin-right: 10px;
+                color: #000;
+                background-color: $color-11-group-1;
+                text-align: center;
+                transition: all 300ms ease;
+
+                &:hover {
+                    color: $color-2-group-1;
+                    
+                }
+            }
+        }
+
+        @media screen and (max-width:800px) {
+     
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+            position: relative;
+        
+        } 
+    }
+
+    .grupo-2{
+        background-color: $color-3-group-1;
+        padding: 15px 10px;
+        text-align: center;
+        color: $color-8-group-1;
+
+        small{
+            font-size: 15px;
+        }
+    }
+}
+
+/* FIN FOOTER */
