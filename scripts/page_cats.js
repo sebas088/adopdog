@@ -15,36 +15,36 @@ class cat {
 const cat_1 = new cat(1, "Catallica", "Hembra", "Negra", 1, "cat_01.jpeg", "adoptar.html");
 const cat_2 = new cat(2, "Medusa", "Hembra", "Blanca", 3, "cat_02.jpeg", "adoptar.html");
 const cat_3 = new cat(3, "Nebula", "Hembra", "Negra", 1, "cat_03.jpeg", "adoptar.html");
-const cat_4 = new cat(4, "Pepa", "Hembra", "Mediana", 4, "dog_04.jpeg", "adoptar.html");
-const cat_5 = new cat(5, "Josefa", "Hembra", "Mediana", 2, "dog_05.jpeg", "adoptar.html");
-const cat_6 = new cat(6, "Raul", "Macho", "Mediana", 3, "dog_06.jpeg", "adoptar.html");
-const cat_7 = new cat(7, "Blanquita", "Hembra", "Pequeña", 6, "dog_07.jpeg", "adoptar.html");
-const cat_8 = new cat(8, "Ignacio", "Macho", "Mediana", 5, "dog_08.jpeg", "adoptar.html");
-const cat_9 = new cat(9, "Zeus", "Macho", "Mediana", 1, "dog_09.jpeg", "adoptar.html");
-const cat_10 = new cat (10, "Princesa", "Hembra", "Mediana", 7, "dog_10.jpeg", "adoptar.html");
-const cat_11 = new cat (11, "Afrodita", "Hembra", "Pequeña", 1, "dog_11.jpeg", "adoptar.html");
-const cat_12 = new cat (12, "Pancracia", "Hembra", "Pequeña", 1, "dog_12.jpeg", "adoptar.htmal");
-const cat_13 = new cat (13, "Socrates", "Macho", "Pequeña", 1, "dog_13.jpeg", "adoptar.html");
-const cat_14 = new cat (14, "Kratos", "Macho", "Mediana", 4, "dog_14.jpeg", "adoptar.html");
+const cat_4 = new cat(4, "Pepa", "Hembra", "Blanca con gris", 4, "cat_04.jpeg", "adoptar.html");
+const cat_5 = new cat(5, "Josefa", "Hembra", "Cafe con rayas", 2, "cat_05.jpeg", "adoptar.html");
+const cat_6 = new cat(6, "Raul", "Macho", "Blanco con negro", 3, "cat_06.jpeg", "adoptar.html");
+const cat_7 = new cat(7, "Blanquita", "Hembra", "Negra con blanco", 6, "cat_07.jpeg", "adoptar.html");
+const cat_8 = new cat(8, "Ignacio", "Macho", "Amarillo con blanco", 5, "cat_08.jpeg", "adoptar.html");
+const cat_9 = new cat(9, "Zeus", "Macho", "Blanco con amarillo", 1, "cat_09.jpeg", "adoptar.html");
+const cat_10 = new cat (10, "Princesa", "Hembra", "Negra", 7, "cat_10.jpeg", "adoptar.html");
+const cat_11 = new cat (11, "Afrodita", "Hembra", "Negra con blanco", 1, "cat_11.jpeg", "adoptar.html");
+const cat_12 = new cat (12, "Pancracia", "Hembra", "Amarilla con blanco", 1, "cat_12.jpeg", "adoptar.htmal");
+const cat_13 = new cat (13, "Socrates", "Macho", "Gris con rayas", 1, "cat_13.jpeg", "adoptar.html");
+const cat_14 = new cat (14, "Kratos", "Macho", "Gris con cafe", 4, "cat_14.jpeg", "adoptar.html");
 
-const dogs = []
-dogs.push(dog_1, dog_2, dog_3, dog_4, dog_5, dog_6, dog_7, dog_8, dog_9, dog_10, dog_11, dog_12, dog_13, dog_14);
+const cats = [];
+cats.push(cat_1, cat_2, cat_3, cat_4, cat_5, cat_6, cat_7, cat_8, cat_9, cat_10, cat_11, cat_12, cat_13, cat_14);
 
-let dogs_div = document.getElementById("seccion_perros");
+let cats_div = document.getElementById("seccion_gatos");
 
-function ver_dogs(array){
-    for(let dog of array){
-        let div_dogs = document.createElement("figure");
-        div_dogs.innerHTML = `
+function ver_cats(array){
+    for(let cat of array){
+        let div_cats = document.createElement("figure");
+        div_cats.innerHTML = `
         <figure class="article_section_dogs">
-            <a href="./${dog.link}"><img src="../sources/images/${dog.imagen}" id="img_section_dogs" alt="${dog.id}"></a>
+            <a href="./${cat.link}"><img src="../sources/images/${cat.imagen}" id="img_section_dogs" alt="${cat.id}"></a>
             <figcaption>
-                <a href="./${dog.link}" id="enlaces_dogs">${dog.nombre}</a>
+                <a href="./${cat.link}" id="enlaces_dogs">${cat.nombre}</a>
             </figcaption>
         </figure>
         `
-        dogs_div.appendChild(div_dogs);
+        cats_div.appendChild(div_cats);
     }
 }
 
-ver_dogs(dogs);
+ver_cats(cats);

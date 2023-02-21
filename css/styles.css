@@ -249,6 +249,7 @@ figcaption {
 .article_section_dogs {
   margin: 15px;
   margin-top: 60px;
+  text-align: center;
   /* background-color: tomato; */
   -webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s; }
   .article_section_dogs:hover {
@@ -263,6 +264,8 @@ figcaption {
   object-fit: cover; }
 
 figcaption {
+  width: 225px;
+  height: 50px;
   font-family: 'mifuente';
   text-align: center;
   margin-top: 10px;
