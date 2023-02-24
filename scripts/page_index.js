@@ -17,7 +17,7 @@ const section_5 = new section ("Medicine", "medicina-icon.png", "medicine.html")
 const sections = [];
 sections.push(section_1, section_2, section_3, section_4, section_5);
 
-let sections_div = document.getElementById("secciones_principal");
+let sections_div = document.getElementById("seccion_principal");
 
 function ver_sections(array){
     for(let section of array){
@@ -25,7 +25,7 @@ function ver_sections(array){
         div_sections.innerHTML = `
         <figure class="article_sections" id="article-mouse">
             <a href="./pages/${section.link}"><img src="./sources/images/${section.imagen}" class="img-sections" alt="section dogs"></a>
-            <figcaption>
+            <figcaption class="figcaption_principal">
                 ${section.nombre}
             </figcaption>
         </figure>

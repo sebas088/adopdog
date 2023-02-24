@@ -1,4 +1,4 @@
-// SCRIPT DOGS
+// SCRIPT CATS
 
 class cat {
     constructor (id, nombre, sexo, raza, edad, imagen, link){
@@ -37,9 +37,10 @@ function ver_cats(array){
         let div_cats = document.createElement("figure");
         div_cats.innerHTML = `
         <figure class="article_section_dogs">
-            <a href="./${cat.link}"><img src="../sources/images/${cat.imagen}" id="img_section_dogs" alt="${cat.id}"></a>
-            <figcaption>
-                <a href="./${cat.link}" id="enlaces_dogs">${cat.nombre}</a>
+            <a href="./${cat.link}"><img src="../sources/images/${cat.imagen}" class="img_section_dogs" alt="${cat.id}"></a>
+            <figcaption class="figcaption_sections">
+                <a href="./${cat.link}" class="enlaces_dogs">${cat.nombre}</a><br>
+                <a>ID: ${cat.id}</a>
             </figcaption>
         </figure>
         `
