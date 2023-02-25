@@ -1,7 +1,12 @@
 
 
 body{
-    background-color: $color-3-group-1;
+    background: $color-2-group-1;
+    background: -webkit-linear-gradient(to right, $color-13-group-1, $color-2-group-1);
+    background: linear-gradient(to right, $color-13-group-1, $color-2-group-1);
+
+
+
     margin-right: 10px;
     overflow-y: scroll;
     width: 100%;

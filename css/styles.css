@@ -18,6 +18,7 @@
 /*enlaces dogs*/
 /*redes sociales*/
 /*formulario*/
+/*color gradiente*/
 @font-face {
   font-family: 'mifuente';
   src: url("../sources/fonts/lexend-zetta-regular.ttf"); }
@@ -34,6 +35,7 @@
 /*enlaces dogs*/
 /*redes sociales*/
 /*formulario*/
+/*color gradiente*/
 /* INICIO HEADER */
 header {
   background-color: white;
@@ -215,7 +217,9 @@ figcaption {
   box-shadow: #818181 2px 2px 2px; }
 
 .carrusel .punto.activo {
-  background-color: #27ce37; }
+  background-color: #24fe41;
+  background: -webkit-linear-gradient(to right, #24fe41, #27ce37);
+  background: linear-gradient(to right, #24fe41, #27ce37); }
 
 /* INICIO SECTION SLIDER */
 .container__slider {
@@ -343,9 +347,10 @@ figcaption {
   height: 25px;
   margin-top: 5px;
   margin-left: 85px;
-  border: solid #27ce37;
-  border-radius: 9px;
-  box-shadow: #818181 1px 1px 1px; }
+  background-color: white;
+  box-shadow: #818181 0.9px 0.9px 0.9px 0.9px;
+  border-radius: 6px;
+  border: solid 0.5px #2b2826; }
 
 .enlaces_dogs {
   text-decoration: none;
@@ -480,6 +485,7 @@ figcaption {
 /*enlaces dogs*/
 /*redes sociales*/
 /*formulario*/
+/*color gradiente*/
 /* FIN SECTION*/
 @use "import";
 /* INICIO FOOTER */
@@ -539,7 +545,9 @@ figcaption {
 
 /* FIN FOOTER */
 body {
-  background-color: #5ad066;
+  background: #27ce37;
+  background: -webkit-linear-gradient(to right, #24fe41, #27ce37);
+  background: linear-gradient(to right, #24fe41, #27ce37);
   margin-right: 10px;
   overflow-y: scroll;
   width: 100%;
@@ -558,3 +566,4 @@ body {
 /*enlaces dogs*/
 /*redes sociales*/
 /*formulario*/
+/*color gradiente*/

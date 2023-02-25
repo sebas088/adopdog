@@ -85,7 +85,9 @@ figcaption{
     box-shadow: $color-11-group-1 2px 2px 2px;
 }
 .carrusel .punto.activo{
-    background-color: $color-2-group-1;
+    background-color: $color-13-group-1;
+    background: -webkit-linear-gradient(to right, $color-13-group-1, $color-2-group-1); 
+    background: linear-gradient(to right, $color-13-group-1, $color-2-group-1); 
 }
 
 //FIN CARRUSEL-----------------------------------------------
@@ -244,11 +246,10 @@ figcaption{
     height: 25px;
     margin-top: 5px;
     margin-left: 85px;
-    border: solid $color-2-group-1;
-    border-radius: 9px;
-    box-shadow: $color-11-group-1 1px 1px 1px;
-    
-    
+    background-color: $color-8-group-1;
+    box-shadow: $color-11-group-1 0.9px 0.9px 0.9px 0.9px;
+    border-radius: 6px;
+    border: solid 0.5px $color-12-group-1;
 }
 
 
