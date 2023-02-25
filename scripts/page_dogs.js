@@ -50,17 +50,7 @@ function ver_dogs(array){
 }
 
 ver_dogs(dogs);
-let info_dog = document.getElementById("name_dog");
-let btn_adoptar = document.getElementById("btn_adoptar");
 
-console.log(info_dog);
-console.log(btn_adoptar);
-let dog_search = info_dog;
-
-
-btn_adoptar.addEventListener("click", ()=>{
-    
-})
 /*
 <figure class="article_section_dogs">
     <a href="./adoptar.html"><img src="../sources/images/dog_06.jpeg" id="img_section_dogs" alt="dog 06"></a>

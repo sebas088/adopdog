@@ -71,10 +71,12 @@ span {
 /* INICIO NAV */
 .enlaces {
   color: black;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-decoration: none; }
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
 
 .menu {
   color: black;
@@ -130,10 +132,21 @@ span {
     right: 40px; }
   #check:checked ~ .menu {
     right: 0; }
+  .enlaces {
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: block; }
   /* FIN RESPONSIVE HEADER */ }
 
 /* FIN RESPONSIVE */
 /* INICIO SECTION */
+html {
+  scroll-behavior: smooth; }
+
 section {
   background-color: white;
   width: 100%;
@@ -171,6 +184,38 @@ figcaption {
   box-shadow: #666666 5px 5px 5px;
   width: 256px;
   height: 256px; }
+
+.carrusel {
+  width: 100%;
+  max-width: 120em;
+  background-color: white;
+  box-shadow: #818181 2px 2px 2px;
+  border-bottom-left-radius: 99px;
+  border-bottom-right-radius: 99px;
+  overflow-x: hidden; }
+
+.carrusel .puntos {
+  width: 100%;
+  margin: 1em 0 0;
+  background-color: white;
+  padding: 3px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; }
+
+.carrusel .punto {
+  width: 25px;
+  height: 25px;
+  background-color: #979696;
+  margin: 1em;
+  list-style: none;
+  border-radius: 90px;
+  border: solid 2px white;
+  box-shadow: #818181 2px 2px 2px; }
+
+.carrusel .punto.activo {
+  background-color: #27ce37; }
 
 /* INICIO SECTION SLIDER */
 .container__slider {
@@ -226,13 +271,18 @@ figcaption {
 .article_dogs {
   margin-left: 30px; }
 
+.container_titles {
+  margin-bottom: 2px;
+  border: solid white;
+  box-shadow: #818181 5px 5px 5px; }
+
 .title_dogs {
   text-align: center;
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: 1;
   line-height: 110px;
-  text-shadow: 0px 4px 4px black;
-  letter-spacing: 0.2em;
+  text-shadow: 0px 3px 3px #818181;
+  letter-spacing: 0.16em;
   /* background-color: rgb(191, 176, 174); */ }
 
 #color_dogs {
@@ -394,27 +444,27 @@ figcaption {
 
 @media (max-width: 945px) and (min-width: 684px) {
   .requisitos {
-    margin-top: 500px;
+    margin-top: 30px;
     flex-direction: column; } }
 
-@media (max-width: 683px) and (min-width: 300px) {
+@media (max-width: 90px) and (min-width: 300px) {
   .requisitos {
     margin-top: 600px;
     flex-direction: column; } }
 
 @media (max-width: 419px) {
   .elementos {
-    margin-top: 630px;
+    margin-top: 10px;
     flex-direction: column; } }
 
 @media (max-width: 548px) and (min-width: 420px) {
   .elementos {
-    margin-top: 500px;
+    margin-top: 60px;
     flex-direction: column; } }
 
 @media (max-width: 1025px) and (min-width: 548px) {
   .elementos {
-    margin-top: 300px;
+    margin-top: 30px;
     flex-direction: column; } }
 
 /* FIN SECTION ADOPTAR */

@@ -1,4 +1,8 @@
 /* INICIO SECTION */
+html{
+    scroll-behavior: smooth;
+}
+
 section{
     background-color: $color-8-group-1;
     width: 100%;
@@ -46,6 +50,46 @@ figcaption{
     width: 256px;
     height: 256px;
 }
+
+//INICIO CARRUSEL----------------------------------------------------
+
+.carrusel{
+    width: 100%;
+    max-width: 120em;
+    background-color: $color-8-group-1;
+    box-shadow: $color-11-group-1 2px 2px 2px;
+    border-bottom-left-radius: 99px;
+    border-bottom-right-radius: 99px;
+    overflow-x: hidden;
+}
+
+
+.carrusel .puntos{
+    width: 100%;
+    margin: 1em 0 0;
+    background-color: $color-8-group-1;
+    padding: 3px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel .punto{
+    width: 25px;
+    height: 25px;
+    background-color: $color-7-group-1;
+    margin: 1em;
+    list-style: none;
+    border-radius: 90px;
+    border: solid 2px $color-8-group-1;
+    box-shadow: $color-11-group-1 2px 2px 2px;
+}
+.carrusel .punto.activo{
+    background-color: $color-2-group-1;
+}
+
+//FIN CARRUSEL-----------------------------------------------
+
 
 /* INICIO SECTION SLIDER */
 .container__slider {
@@ -118,13 +162,19 @@ figcaption{
     margin-left: 30px;
 }
 
+.container_titles{
+    margin-bottom: 2px;
+    border:solid $color-8-group-1;
+	box-shadow: $color-11-group-1 5px 5px 5px;
+}
+
 .title_dogs {
     text-align: center;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 1;
     line-height: 110px;
-    text-shadow: 0px 4px 4px $color-5-group-1;
-    letter-spacing: 0.2em;
+    text-shadow: 0px 3px 3px $color-11-group-1;
+    letter-spacing: 0.16em;
     /* background-color: rgb(191, 176, 174); */
     
 }
@@ -326,11 +376,11 @@ figcaption{
 
 @media (max-width: 945px) and (min-width: 684px) {
     .requisitos{
-        margin-top: 500px;
+        margin-top: 30px;
         flex-direction: column;
     }
 }
-@media (max-width: 683px) and (min-width: 300px) {
+@media (max-width: 90px) and (min-width: 300px) {
     .requisitos{
         margin-top: 600px;
         flex-direction: column;
@@ -338,19 +388,19 @@ figcaption{
 }
 @media (max-width: 419px){
     .elementos{
-        margin-top: 630px;
+        margin-top: 10px;
         flex-direction: column;
     }
 }
 @media (max-width: 548px) and (min-width: 420px){
     .elementos{
-        margin-top: 500px;
+        margin-top: 60px;
         flex-direction: column;
     }
 }
 @media (max-width: 1025px) and (min-width: 548px){
     .elementos{
-        margin-top: 300px;
+        margin-top: 30px;
         flex-direction: column;
     }
 }
