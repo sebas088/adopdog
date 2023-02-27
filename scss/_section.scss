@@ -90,8 +90,7 @@ figcaption{
     background: linear-gradient(to right, $color-13-group-1, $color-2-group-1); 
 }
 
-//FIN CARRUSEL-----------------------------------------------
-
+//FIN CARRUSEL-------------------------------------------------------------------------00
 
 /* INICIO SECTION SLIDER */
 .container__slider {
@@ -207,15 +206,21 @@ figcaption{
 }
 
 .img_section_dogs{
-	border:solid $color-5-group-1;
+	border:solid black;
 	border-radius:15px;
 	box-shadow: $color-6-group-1 5px 5px 5px;
     width: 225px;
     height: 225px;
     object-fit: cover;
+    -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+    &:hover{
+        -webkit-transform:scale(1.2);
+        border: solid rgb(122, 194, 50);
+    }
 }
 
 .figcaption_principal{
+    max-width: 256px;
     width: 100%;
     height: 60px;
     text-align: center;
@@ -233,10 +238,13 @@ figcaption{
     text-align: center;
     margin-top: 10px;
     padding-top: 10px;
-    border: solid $color-5-group-1;
+    border: solid black;
     border-radius: 9px;
     box-shadow: $color-6-group-1 3px 3px 3px;
     justify-content: center;
+    &:hover{
+        border: solid rgb(122, 194, 50);
+    }
 }
 
 .figcaption_precio{

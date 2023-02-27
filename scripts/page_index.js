@@ -24,8 +24,8 @@ function ver_sections(array){
         let div_sections = document.createElement("figure");
         div_sections.innerHTML = `
         <figure class="article_sections" id="article-mouse">
-            <a href="./pages/${section.link}"><img src="./sources/images/${section.imagen}" class="img-sections" alt="section dogs"></a>
-            <figcaption class="figcaption_principal">
+            <a href="./pages/${section.link}"><img src="./sources/images/${section.imagen}" class="img-sections card" alt="section dogs"></a>
+            <figcaption class="figcaption_principal card">
                 ${section.nombre}
             </figcaption>
         </figure>
