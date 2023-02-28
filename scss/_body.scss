@@ -2,39 +2,25 @@
 
 body{
     background: #F7F8F8;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    border: solid rgb(122, 194, 50);
-
-
+    
 
     margin-right: 10px;
     overflow-y: scroll;
     width: 100%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-
-
-
-    .dark_mode{
-        color: white;
-        background-color: black;
-        border: solid rgb(122, 194, 50);
-        border-left: solid transparent;
-        border-right:solid transparent;
-        border-radius: 0px;
-    }
-
-    .dark_mode .card{
-        color: white;
-        background-color: black;
-        border: solid rgb(122, 194, 50);
-        
-    }
-    .dark_mode .color_redes{
-        background-color: rgb(122, 194, 50);;
-    }    
-    
 }
+
+.color_body_dark{
+    background: rgb(77, 77, 77);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(116, 116, 116), rgb(77, 77, 77));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(116, 116, 116)    , rgb(77, 77, 77)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
 @import "colors";

@@ -10,16 +10,22 @@
     <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="icon" href="./sources/iconos/logo_adopdog.png" type="image/PNG"/>    
 </head>
-<body class="color_body">
-    <header class=" card">
-        <a href="../index.html" class="decoracion_enlaces">
-            <h1>
-                Ado<span>pd</span>og
-            </h1>
-        </a>
-        <div class="btn_dark_mode">
-            
+<body id="color_body" class="">
+    <header id="header_dark" class="">
+        <div>
+            <a href="../index.html" class="decoracion_enlaces">
+                <h1>
+                    Ado<span>pd</span>og
+                </h1>
+            </a>
+            <div class="container_modes">
+                <div id="btn_dark_mode">
+                </div>
+                <div id="btn_white_mode">
+                </div>
+            </div>
         </div>
+        
         <input type="checkbox" id="check">
         <label for="check" class="mostrar-menu">
             &#8801
@@ -39,10 +45,10 @@
     </header>
     
 
-    <section class="">
+    <section id="section_dark" class="">
         <!-- inicio slider -->
         <article>
-            <div class="container__slider card">
+            <div class="container__slider">
                 <div class="slider" id="slider">
                     <div class="slider__section" >
                         <img src="sources/images/slider_01.jpeg" alt="imagen slider 01" class="slider__img">
@@ -76,7 +82,7 @@
 
     
 
-    <footer class="footer ">
+    <footer id="footer_dark" class="footer ">
         <div class="grupo-1">
             <div class="box">
                 <figure>
@@ -101,12 +107,13 @@
                 </div>
             </div> 
         </div>
-        <div class="grupo-2">
+        <div id="color_footer" class="grupo-2">
             <small>&copy; 2022 <b>Adopdog</b> - Todos los derechos reservados.</small>
         </div>
     </footer>
     <script src="scripts/page_index.js"></script>
     <script src="scripts/slider.js"></script>
+    <script src="scripts/dark_mode.js"></script>
     <script src="https://kit.fontawesome.com/85b58ffa61.js" crossorigin="anonymous"></script>
     
 </body>

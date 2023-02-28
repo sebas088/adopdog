@@ -1,7 +1,7 @@
 @use "import";
 
 /* INICIO FOOTER */
-.footer{
+footer{
     width: 100%;
     background-color: $color-8-group-1;
     margin-top: 10px;
@@ -70,8 +70,8 @@
 
     .grupo-2{
         background: #F7F8F8;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
         padding: 15px 10px;
         text-align: center;
@@ -80,6 +80,12 @@ background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, F
         small{
             font-size: 15px;
         }
+    }
+
+    .color_grupo-2_dark{
+        background: rgb(77, 77, 77);  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, rgb(116, 116, 116), rgb(77, 77, 77));  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, rgb(116, 116, 116)    , rgb(77, 77, 77)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
     
