@@ -57,12 +57,3 @@ console.log(dogs);
 
 
 
-/*
-<figure class="article_section_dogs">
-    <a href="./adoptar.html"><img src="../sources/images/dog_06.jpeg" id="img_section_dogs" alt="dog 06"></a>
-    <figcaption>
-        <a href="./adoptar.html" id="enlaces_dogs"> Adoptar</a>
-    </figcaption>
-</figure>
-*/
-
