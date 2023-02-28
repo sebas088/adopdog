@@ -133,7 +133,7 @@ span {
   width: 70px;
   height: 35px;
   display: inline-flex;
-  margin-left: 95px;
+  margin-left: 20px;
   z-index: 2;
   justify-content: center; }
 
@@ -151,8 +151,8 @@ span {
 
 #btn_dark_mode {
   width: 25px;
-  height: 15px;
-  background-color: black;
+  height: 20px;
+  background-color: #333333;
   margin-left: 0px;
   border-bottom-left-radius: 99px;
   border-top-left-radius: 99px;
@@ -165,7 +165,7 @@ span {
 
 #btn_white_mode {
   width: 25px;
-  height: 15px;
+  height: 20px;
   margin-left: 0px;
   background-color: #ebebeb;
   margin-left: 0;
@@ -452,9 +452,15 @@ figcaption {
   box-shadow: #666666 5px 5px 5px;
   display: block; }
 
+.container_form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
 .form {
   background-color: white;
   margin: auto;
+  margin-top: 15px;
   width: 100%;
   max-width: 400px;
   padding: 4.5em 3em;
@@ -507,6 +513,7 @@ figcaption {
 
 #enviar {
   margin: auto;
+  margin-top: 15px;
   width: 150px;
   height: 40px;
   border-radius: 9px; }

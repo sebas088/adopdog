@@ -41,65 +41,62 @@
 
     <section>
         <!-- inicio sections -->
-        
-        <form class="form" name="registro_usuario" method="get">
-            <div class="form__container" id="seccion_adoptar">
-                <!-- <div>
-                    <h2 id="h2_form">
-                        Rellena el formulario y ven por tú peludito
-                    </h2>
-                
+        <div>
+        <div class="container_form">
+            <form class="form">
+                <div class="form__container" id="seccion_adoptar">
                     <div>
-                        <img src="../sources/images/dog_01.jpeg" id="img_section_dogs">
-                        <h3>
-                            Arya
-                        </h3>
-                        <ul class="ul_form">
-                            <li> Sexo: Hembra </li>
-                            <li> Raza: Mediana </li>
-                            <li> Edad: 2 años </li>
-                        </ul>
+                        <h2 id="h2_form">
+                            Rellena el formulario y ven por tú peludito!
+                        </h2>
                     </div>
-                </div> -->
-                <div class="form__group">
-                    <label for="nombre" id="nombre" class="form__label">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" class="form__input" autocomplete="off" placeholder="Nombre">
-                 </div>
-                    
-                    
-                    
-                <div class="form__group">
-                    <label for="apellido" id="apellido" class="form__label">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido" class="form__input" autocomplete="off" placeholder="Apellido">
+        
+        
+                    <div class="form__group">
+                        <label for="id" class="form__label">ID del peludito:</label>
+                        <input type="number" name="id" id="id_peludito" class="form__input" autocomplete="off" placeholder="Numero de ID">
+                    </div>
+        
+                    <div class="form__group">
+                        <label for="nombre" class="form__label">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" class="form__input" autocomplete="on" placeholder="Nombre">
+                    </div>
+        
+        
+        
+                    <div class="form__group">
+                        <label for="apellido" class="form__label">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" class="form__input" autocomplete="on" placeholder="Apellido">
+                    </div>
+        
+        
+                    <div class="form__group">
+                        <label for="correo" class="form__label">Correo electronico:</label>
+                        <input type="text" name="correo" id="correo" class="form__input" autocomplete="on" placeholder="Correo electronico">
+                    </div>
+        
+        
+                    <div class="form__group">
+                        <label for="telefono" class="form__label">Telefono:</label>
+                        <input type="number" name="telefono" id="telefono" class="form__input" autocomplete="on" placeholder="Telefono">
+                    </div>
                 </div>
-                    
-
-                <div class="form__group">
-                    <label for="correo" id="correo" class="form__label">Correo electronico:</label>
-                    <input type="text" name="correo" id="correo" class="form__input" autocomplete="off" placeholder="Correo electronico">
-                </div>
-                    
-
-                <div class="form__group">
-                    <label for="telefono" id="telefono" class="form__label">Telefono:</label>
-                    <input type="text" name="telefono" id="telefono" class="form__input" autocomplete="off" placeholder="Telefono">
-                </div>
-                    
-
-                <div class="form__group">
-                    <label for="direccion" id="direccion" class="form__label">Dirección:</label>
-                    <input type="text" name="direccion" id="direccion" class="form__input" autocomplete="off" placeholder="Direccion">
-                </div>
-                                
-                <input type="checkbox" name="requisitos" id="requisitos" required value="requisitos"></label>
-                <label for="requisitos">Cumples con los requisitos? Se comprobaran antes de entregarte a tu peludito.<br>
-                             
+                
+            </form>
+            <button type="text" id="enviar" class="">Enviar Formulario</button>
+            
+        </div>
+        <!-- <div>
+            <input type="checkbox" name="requisitos" id="requisitos" required value="requisitos"></label>
+            <label for="requisitos">Cumples con los requisitos? Se comprobaran antes de entregarte a tu peludito.<br>
+        
                 <input type="checkbox" name="condiciones" id="condiciones" required value="condiciones"></label>
-                <label for="condiciones">Acepto terminos y condiciones.<br>
-                            
-                <input type="submit" value="Registrar" name="enviar" id="enviar">
-            </div>
-        </form>
+            <label for="condiciones">Acepto terminos y condiciones.<br>
+        
+                
+        </div>
+        </div> -->
+        
 
             
 
@@ -137,7 +134,8 @@
         </div>
     </footer>
 
-    <script src="../scripts/page_dogs.js"></script>
+    
+    <script src="../scripts/page_adoptar.js"></script>
     <script src="https://kit.fontawesome.com/85b58ffa61.js" crossorigin="anonymous"></script>
 </body>
 </html>

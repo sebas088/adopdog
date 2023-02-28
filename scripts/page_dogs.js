@@ -45,11 +45,15 @@ function ver_dogs(array){
             </figcaption>    
         </figure>
         `
-        dogs_div.appendChild(div_dogs);
+        dogs_div.appendChild(div_dogs)
     }
 }
 
 ver_dogs(dogs);
+
+console.log(dogs);
+
+
 
 /*
 <figure class="article_section_dogs">

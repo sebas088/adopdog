@@ -289,12 +289,17 @@ figcaption{
     }
 
 
-
+    .container_form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
     
 
     .form {
         background-color: $color-8-group-1;
         margin: auto;
+        margin-top: 15px;
         width: 100%;
         max-width: 400px;
         padding: 4.5em 3em;
@@ -356,8 +361,8 @@ figcaption{
     }
 
     #enviar {
-        
         margin: auto;
+        margin-top: 15px;
         width: 150px;
         height: 40px;
         border-radius: 9px;
