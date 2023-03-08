@@ -49,11 +49,11 @@ span {
     width: 25px;
     height: 25px;
     // background-color: aqua;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    flex-direction: row-reverse;
-    margin-left: 310px;
-    
+    flex-direction: row;
+    margin-left: 15px;
+    // position: fixed;
 }
 /* FIN CARRITO DE COMPRAS ------------------------------------*/
 /* INICIO NAV */
@@ -116,7 +116,7 @@ span {
 }
 
 .dark_mode{
-    color: white;
+    color: $color-2-group-1;
     background-color: rgb(77, 77, 77);
     // border: solid rgb(122, 194, 50);
     // border-left: solid transparent;
@@ -177,7 +177,41 @@ span {
 }
 
 
-/* INICIO RESPONSIVE */
+// /* INICIO RESPONSIVE */
+// @media(min-width: 340px) and (max-width: 390px){
+//     .btn_carrito{
+//         width: 25px;
+//         height: 25px;
+//         margin-left: 15px;
+//         background-color: aqua;
+//         display: flex;
+//         justify-content: center;
+//         flex-direction: row-reverse;
+//     }
+// }
+// @media(min-width: 391px) and (max-width: 500px){
+//     .btn_carrito{
+//         width: 25px;
+//         height: 25px;
+//         margin-left: 60px;
+//         background-color: aqua;
+//         display: flex;
+//         justify-content: center;
+//         flex-direction: row-reverse;
+//     }
+// }
+
+// @media(min-width: 476px) and (max-width: 600px){
+//     .btn_carrito{
+//         width: 25px;
+//         height: 25px;
+//         margin-left: 130px;
+//         background-color: aqua;
+//         display: flex;
+//         justify-content: center;
+//         flex-direction: row-reverse;
+//     }
+// }
 @media(max-width: 1200px){
     /* RESPONSIVE HEADER */
     .mostrar-menu,
