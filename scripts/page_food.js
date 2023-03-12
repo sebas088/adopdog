@@ -35,13 +35,12 @@ function ver_food(array){
         let div_food = document.createElement("figure");
         div_food.innerHTML = `
         <figure class="article_section_dogs">
-            <a href="./comprar.html"><img src="../sources/images/${food.imagen}"  class="img_section_dogs"></a>
+            <a href=""><img src="../sources/images/${food.imagen}"  class="img_section_dogs"></a>
             <figcaption class="figcaption_sections">
-                <a href="./comprar.html" class
-                ="enlaces_dogs"> ${food.nombre} </a>
+                <a href="" class="enlaces_dogs"> ${food.nombre} </a>
             </figcaption>
             <figcaption class="figcaption_precio">
-                <a href="./comprar.html" class="precio_container enlaces_dogs"> ${food.precio}€ </a>                
+                <a href="" class="precio_container enlaces_dogs btn-add-cart"> ${food.precio}€ </a>                
             </figcaption>
         </figure>
         `

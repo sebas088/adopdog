@@ -45,7 +45,7 @@ function ver_dogs(array){
             </figcaption>    
         </figure>
         `
-        dogs_div.appendChild(div_dogs)
+        dogs_div.appendChild(div_dogs);
     }
 }
 
