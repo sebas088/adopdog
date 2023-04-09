@@ -10,97 +10,117 @@
     <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="icon" href="./sources/iconos/logo_adopdog.png" type="image/PNG"/>    
 </head>
-<body id="color_body" class="">
-    <header id="header_dark" class="">
+<body class="Body" id="Body--color">
+    <!-- INICIO HEADER -->
+    <header class="Header" id="Header--themes">
         <div>
-            <a href="../index.html" class="decoracion_enlaces">
-                <h1>
-                    Ado<span>pd</span>og
+            <!-- INICIO LOGO -->
+            <a class="Header-a" href="../index.html">
+                <h1 class="Header-h1">
+                    Ado<span class="Header-span">pd</span>og
                 </h1>
             </a>
-            <div class="container_modes">
-                <div id="btn_dark_mode">
+            <!-- FIN LOGO -->
+            <!-- INICIO BTN THEMES -->
+            <div class="Header-div--themes">
+                <div id="Header-divBtnMode--dark">
                 </div>
-                <div id="btn_white_mode">
+                <div id="Header-divBtnMode--light">
                 </div>
             </div>
+            <!-- FIN BTN THEMES -->
+            <!-- INICIO CARRITO DE COMPRAS -->
+            <div class="Header-divBtnCart">
+                <input type="checkbox" id="checkCart">
+                <label for="checkCart" class="Header-divBtnCart" id="btnCart">
+                    <img src="../sources/iconos/carro_icon.png">
+                </label>
+                <div class="Header-divShopping" id="divShopping">
+                    <div class="divShopping--info">
+                        CONTENEDOR COMPRA
+                    </div>
+                </div>
+            </div>
+            <!-- FIN CARRITO DE COMPRAS -->
         </div>
         
-        
+        <!-- INICIO NAV -->
         <input type="checkbox" id="check">
-        <label for="check" class="mostrar-menu">
+        <label for="check" class="Header-label--iconOpenMain">
             &#8801
         </label>
-        <nav class="menu">
+        <nav class="Header-nav">
             <ul style="list-style: none;">
-                <li class="enlaces"> <a href="./index.html" class="enlaces">Inicio</a> </li>
-                <li class="enlaces"> <a href="./pages/requisitos.html" class="enlaces">Requisitos</a> </li>
-                <li class="enlaces"> <a href="./pages/dogs.html" class="enlaces">Dogs</a> </li>
-                <li class="enlaces"> <a href="./pages/cats.html" class="enlaces">Cats</a> </li>
-                <li class="enlaces"> <a href="#snosotros" class="enlaces">Sobre nosotros</a> </li>
-                <label for="check" class="esconder-menu">
+                <li class="Header-li"> <a href="./index.html" class="Header-a">Inicio</a> </li>
+                <li class="Header-li"> <a href="./pages/requisitos.html" class="Header-a">Requisitos</a> </li>
+                <li class="Header-li"> <a href="./pages/dogs.html" class="Header-a">Dogs</a> </li>
+                <li class="Header-li"> <a href="./pages/cats.html" class="Header-a">Cats</a> </li>
+                <li class="Header-li"> <a href="#snosotros" class="Header-a">Sobre nosotros</a> </li>
+                <label for="check" class="Header-label--iconCloseMain">
                     &#215
                 </label>
             </ul>
         </nav>
+        <!-- FIN NAV -->
     </header>
+    <!-- FIN HEADER -->
     
-
-    <section id="section_dark" class="">
-        <!-- inicio slider -->
+    <!-- INICIO SECTION -->
+    <section class="Section" id="Section--themes">
+        <!-- INICIO SLIDER -->
         <article>
-            <div class="container__slider">
-                <div class="slider" id="slider">
-                    <div class="slider__section" >
-                        <img src="sources/images/slider_01.jpeg" alt="imagen slider 01" class="slider__img">
+            <div class="Section-divSliderContainer">
+                <div class="Section-divSlider" id="Section-divSlider">
+                    <div class="Section-divSlider--imgContainer" >
+                        <img src="sources/images/slider_01.jpeg" alt="imagen slider 01" class="Section-divSlider--img">
                     </div>
-                    <div class="slider__section">
-                        <img src="sources/images/slider_02.jpeg" alt="imagen slider 02" class="slider__img">
+                    <div class="Section-divSlider--imgContainer">
+                        <img src="sources/images/slider_02.jpeg" alt="imagen slider 02" class="Section-divSlider--img">
                     </div>
-                    <div class="slider__section">
-                        <img src="sources/images/slider_03.jpeg" alt="imagen slider 03" class="slider__img">
+                    <div class="Section-divSlider--imgContainer">
+                        <img src="sources/images/slider_03.jpeg" alt="imagen slider 03" class="Section-divSlider--img">
                     </div>
-                    <div class="slider__section">
-                        <img src="sources/images/slider_04.jpeg" alt="imagen slider 03" class="slider__img">
+                    <div class="Section-divSlider--imgContainer">
+                        <img src="sources/images/slider_04.jpeg" alt="imagen slider 03" class="Section-divSlider--img">
                     </div>
-                    <div class="slider__section">
-                        <img src="sources/images/slider_05.jpeg" alt="imagen slider 04" class="slider__img">
+                    <div class="Section-divSlider--imgContainer">
+                        <img src="sources/images/slider_05.jpeg" alt="imagen slider 04" class="Section-divSlider--img">
                     </div>
-                    <div class="slider__section">
-                        <img src="sources/images/slider_06.jpeg" alt="imagen slider 05" class="slider__img">
+                    <div class="Section-divSlider--imgContainer">
+                        <img src="sources/images/slider_06.jpeg" alt="imagen slider 05" class="Section-divSlider--img">
                     </div>
-                    <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
-                    <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
+                    <div class="Section-divSlider--btn Section-divSlider--btn--right" id="btn-right">&#62</div>
+                    <div class="Section-divSlider--btn Section-divSlider--btn--left" id="btn-left">&#60</div>
                 </div>
             </div>
         </article>
-        <!-- fin slider -->
-        <!-- inicio sections -->
-        <article class="container_sections" id="seccion_principal">
+        <!-- FIN SLIDER -->
+        <!-- INICIO ARTICLES -->
+        <article class="Section-article" id="Section--main">
         </article>
-        <!-- fin sections -->
+        <!-- FIN ARTICLES -->
     </section>
-
+    <!-- FIN SECTION -->
     
-
-    <footer id="footer_dark" class="footer ">
-        <div class="grupo-1">
-            <div class="box">
+    <!-- INICIO FOOTER -->
+    <footer class="Footer" id="Footer--themes">
+        <div class="Footer-divGrupo1">
+            <div class="Footer-divGrupo1--box">
                 <figure>
                     <a href="#">
                         <img src="./sources/images/logo_adopdog.svg" alt="logo adopdog">
                     </a>
                 </figure>
             </div>
-            <div class="box">
+            <div class="Footer-divGrupo1--box">
                 <a name="snosotros">
                     <h2>SOBRE NOSOTROS</h2>
                 </a>
                 <p>Nuestro objetivo principal es ofrecer un servicio de adopción de forma segura, sin ningún costo adicional al de las vacunas, desparasitación y esterilización. Además de ofrecer productos relacionados con el cuidado de las mascotas.</p>
             </div>
-            <div class="box">
+            <div class="Footer-divGrupo1--box">
                 <h2>SIGUENOS</h2>
-                <div class="red-social">
+                <div class="Footer-divGrupo1--redes">
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-instagram"></a>
                     <a href="#" class="fa fa-twitter"></a>
@@ -108,14 +128,15 @@
                 </div>
             </div> 
         </div>
-        <div id="color_footer" class="grupo-2">
+        <div class="Footer-divGrupo2" id="Footer-divRights--themes">
             <small>&copy; 2022 <b>Adopdog</b> - Todos los derechos reservados.</small>
         </div>
     </footer>
+
     <script src="scripts/page_index.js"></script>
     <script src="scripts/slider.js"></script>
     <script src="scripts/dark_mode.js"></script>
+    <script src="scripts/carrito_compra.js"></script>
     <script src="https://kit.fontawesome.com/85b58ffa61.js" crossorigin="anonymous"></script>
-    
 </body>
 </html>

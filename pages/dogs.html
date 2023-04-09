@@ -10,67 +10,76 @@
     <link rel="stylesheet" href="../css/styles.css"/>
     <link rel="icon" href="../sources/iconos/logo_adopdog.png" type="image/PNG"/>
 </head>
-<body id="color_body" class="">
-    <header id="header_dark" class="">
+<body class="Body" id="Body--color">
+    <header class="Header" id="Header--themes">
         <div>
-            <a href="../index.html" class="decoracion_enlaces">
-                <h1>
-                    Ado<span>pd</span>og
+            <a class="Header-a" href="../index.html">
+                <h1 class="Header-h1">
+                    Ado<span class="Header-span">pd</span>og
                 </h1>
             </a>
-            <div class="container_modes">
-                <div id="btn_dark_mode">
+            <div class="Header-div--themes">
+                <div id="Header-divBtnMode--dark">
                 </div>
-                <div id="btn_white_mode">
+                <div id="Header-divBtnMode--light">
                 </div>
             </div>
-            <div class="btn_carrito">
-                <img src="../sources/iconos/carro_icon.png">
+            <!-- INICIO CARRITO DE COMPRAS -->
+            <div class="Header-divBtnCart">
+                <input type="checkbox" id="checkCart" >
+                <label for="checkCart" class="Header-divBtnCart" id="btnCart">
+                    <img src="../sources/iconos/carro_icon.png">
+                </label>
+                <div class="Section-divShopping" id="divShopping">
+                    <div class="divShopping--info">
+                        CONTENEDOR COMPRA
+                    </div>
+                </div>
             </div>
+            <!-- FIN CARRITO DE COMPRAS -->
         </div>
         <input type="checkbox" id="check">
-        <label for="check" class="mostrar-menu">
+        <label for="check" class="Header-label--iconOpenMain">
             &#8801
         </label>
-        <nav class="menu">
+        <nav class="Header-nav">
             <ul style="list-style: none;">
-                <li class="enlaces"> <a href="../index.html" class="enlaces">Inicio</a> </li>
-                <li class="enlaces"> <a href="requisitos.html" class="enlaces">Requisitos</a> </li>
-                <li class="enlaces"> <a href="dogs.html" class="enlaces">Dogs</a> </li>
-                <li class="enlaces"> <a href="cats.html" class="enlaces">Cats</a> </li>
-                <li class="enlaces"> <a href="#snosotros" class="enlaces">Sobre nosotros</a> </li>
-                <label for="check" class="esconder-menu">
+                <li class="Header-li"> <a href="../index.html" class="Header-a">Inicio</a> </li>
+                <li class="Header-li"> <a href="requisitos.html" class="Header-a">Requisitos</a> </li>
+                <li class="Header-li"> <a href="dogs.html" class="Header-a">Dogs</a> </li>
+                <li class="Header-li"> <a href="cats.html" class="Header-a">Cats</a> </li>
+                <li class="Header-li"> <a href="#snosotros" class="Header-a">Sobre nosotros</a> </li>
+                <label for="check" class="Header-label--iconCloseMain">
                     &#215
                 </label>
             </ul>
         </nav>
     </header>
 
-    <section id="section_dark" class="">
+    <section class="Section" id="Section--themes">
         <!-- inicio sections -->
-        <div class="container_titles">
-            <h2 class="title_dogs">
+        <div class="Section-divTitleContainer">
+            <h2 class="Section-h2--title">
                 DOGS
             </h2>
         </div>
-        <div class="carrusel">
-            <div class="grande" id="opciones">
-                <div class="grande">
-                    
+        <div class="Section-divCarousel">
+            <div>
+                <div>
                 </div>
             </div>
         
-            <ul class="puntos">
-                <li class="punto"><a href="./requisitos.html" style="color:transparent;">RR<br>RR</a></li>
-                <li class="punto activo"><a href="./dogs.html" style="color:transparent;">RR<br>RR</a></li>
-                <li class="punto"><a href="./cats.html" style="color:transparent;">RR<br>RR</a></li>
-                <li class="punto"><a href="./food.html" style="color:transparent;">RR<br>RR</a></li>
-                <li class="punto"><a href="./toys.html" style="color:transparent;">RR<br>RR</a></li>
-                <li class="punto"><a href="./medicine.html" style="color:transparent;">RR<br>RR</a></li>
+            <ul class="Section-ul--points">
+                <li class="Section-li--point"><a href="./requisitos.html" style="color:transparent;">RR<br>RR</a></li>
+                <li class="Section-li--point active"><a href="./dogs.html" style="color:transparent;">RR<br>RR</a></li>
+                <li class="Section-li--point"><a href="./cats.html" style="color:transparent;">RR<br>RR</a></li>
+                <li class="Section-li--point"><a href="./food.html" style="color:transparent;">RR<br>RR</a></li>
+                <li class="Section-li--point"><a href="./toys.html" style="color:transparent;">RR<br>RR</a></li>
+                <li class="Section-li--point"><a href="./medicine.html" style="color:transparent;">RR<br>RR</a></li>
             </ul>
         </div>        
-        <div class="elementos">
-            <article class="container_sections" id="seccion_perros">
+        <div class="Section-divElementos">
+            <article class="Section-article" id="Section-article--dogs">
             </article>
         </div>
         <!-- fin sections -->
@@ -78,24 +87,24 @@
 
     
 
-    <footer id="footer_dark" class="footer">
-        <div class="grupo-1">
-            <div class="box">
+    <footer class="Footer" id="Footer--themes">
+        <div class="Footer-divGrupo1">
+            <div class="Footer-divGrupo1--box">
                 <figure>
                     <a href="#">
                         <img src="../sources/images/logo_adopdog.svg" alt="logo adopdog">
                     </a>
                 </figure>
             </div>
-            <div class="box">
+            <div class="Footer-divGrupo1--box">
                 <a name="snosotros">
                     <h2>SOBRE NOSOTROS</h2>
                 </a>
                 <p>Nuestro objetivo principal es ofrecer un servicio de adopción de forma segura, sin ningún costo adicional al de las vacunas, desparasitación y esterilización. Además de ofrecer productos relacionados con el cuidado de las mascotas.</p>
             </div>
-            <div class="box">
+            <div class="Footer-divGrupo1--box">
                 <h2>SIGUENOS</h2>
-                <div class="red-social">
+                <div class="Footer-divGrupo1--redes">
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-instagram"></a>
                     <a href="#" class="fa fa-twitter"></a>
@@ -103,13 +112,14 @@
                 </div>
             </div> 
         </div>
-        <div id="color_footer" class="grupo-2">
+        <div class="Footer-divGrupo2" id="Footer-divRights--themes">
             <small>&copy; 2022 <b>Adopdog</b> - Todos los derechos reservados.</small>
         </div>
     </footer>
 
     <script src="../scripts/page_dogs.js"></script>
     <script src="../scripts/dark_mode.js"></script>
+    <script src="../scripts/carrito_compra.js"></script>
     <script src="https://kit.fontawesome.com/85b58ffa61.js" crossorigin="anonymous"></script>
 </body>
 </html>

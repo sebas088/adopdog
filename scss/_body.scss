@@ -1,26 +1,20 @@
-
-
-body{
+.Body{
     background: #F7F8F8;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    
 
     margin-right: 10px;
     overflow-y: scroll;
     width: 100%;
     box-sizing: border-box;
+    font-family: 'mifuente';
     -webkit-box-sizing: border-box;
 }
 
-.color_body_dark{
+.Body--darkMode{
     background: rgb(77, 77, 77);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgb(116, 116, 116), rgb(77, 77, 77));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgb(116, 116, 116)    , rgb(77, 77, 77)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
+    background: -webkit-linear-gradient(to right, rgb(116, 116, 116), rgb(77, 77, 77));
+    background: linear-gradient(to right, rgb(116, 116, 116)    , rgb(77, 77, 77));
 }
 
 @import "colors";

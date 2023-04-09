@@ -1,5 +1,5 @@
-const slider = document.querySelector("#slider");
-let slider_section = document.querySelectorAll(".slider__section");
+const slider = document.querySelector("#Section-divSlider");
+let slider_section = document.querySelectorAll(".Section-divSlider--imgContainer");
 let slider_section_last = slider_section[slider_section.length -1];
 
 const btn_left = document.querySelector("#btn-left");
@@ -8,7 +8,7 @@ const btn_right = document.querySelector("#btn-right");
 slider.insertAdjacentElement('afterbegin' , slider_section_last);
 
 function move_next(){
-    let slider_section_first = document.querySelectorAll(".slider__section")[0];
+    let slider_section_first = document.querySelectorAll(".Section-divSlider--imgContainer")[0];
     slider.style.margin_left = "-200%";
     slider.style.transition = "all 0.5s";
     setTimeout(function(){
@@ -19,7 +19,7 @@ function move_next(){
 }
 
 function move_prev(){
-    let slider_section = document.querySelectorAll(".slider__section");
+    let slider_section = document.querySelectorAll(".Section-divSlider--imgContainer");
     let slider_section_last = slider_section[slider_section.length -1];
     slider.style.margin_left = "0";
     slider.style.transition = "all 0.5s";

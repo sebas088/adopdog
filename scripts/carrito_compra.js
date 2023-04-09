@@ -1,28 +1,31 @@
 // CARRITO DE COMPRA
-
-function mostrar_compra() {
-    let div = document.getElementById("div_compra");
-    if (div.style.display === "none") {
-        div.style.display = "block";
+let divShopping = document.getElementById("divShopping");
+function displayCart(){
+    divShopping.style.display = "none";
+}
+displayCart();
+function showShopping() {
+    
+    if (divShopping.style.display === "none") {
+        divShopping.style.display = "block";
     } else {
-        div.style.display = "none";
+        divShopping.style.display = "none";
     }
 }
 
-let buttom = document.getElementById("buttom_compra");
-buttom.addEventListener("click", ()=>{
-    mostrar_compra();
+let btnCart = document.getElementById("btnCart");
+btnCart.addEventListener("click", ()=>{
+    showShopping();
 })
-/* <button onclick="myFunction()">Clickeame</button>
 
-<div id="myDIV" style="border:1px solid black;">
-  Este elemento aparece y desaparece con el botón
-</div> */
-// function myFunction() {
-//     var x = document.getElementById("myDIV");
-//     if (x.style.display === "none") {
-//         x.style.display = "block";
-//     } else {
-//         x.style.display = "none";
-//     }
-// }
+let cart = [];
+
+const addCart = (prodId) => {
+    const item = seeFood.find ((prod) => prod.id === prodId);
+    cart.push(item);
+    console.log(cart);
+}
+
+
+
+

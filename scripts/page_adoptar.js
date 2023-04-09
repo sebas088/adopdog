@@ -1,6 +1,6 @@
 //SCRIPT ADOPTAR
 
-class info_adoptar {
+class InfoAdopt {
     constructor (id, nombre, apellido, correo, tel, id_peludito){
         this.id = id;
         this.nombre = nombre;
@@ -11,42 +11,42 @@ class info_adoptar {
     }
 }
 
-let info_adoptantes = [];
+let infoAdopters = [];
 
-if(localStorage.getItem("info_adoptantes")){
-    info_adoptantes = JSON.parse(localStorage.getItem("info_adoptantes"));
+if(localStorage.getItem("infoAdopters")){
+    infoAdopters = JSON.parse(localStorage.getItem("infoAdopters"));
 }else{
-    localStorage.setItem("info_adoptantes", JSON.stringify(info_adoptantes));
+    localStorage.setItem("infoAdopters", JSON.stringify(infoAdopters));
 }
 
 // localStorage.setItem("info_adoptantes", JSON.stringify(info_adoptantes));
 
-function guardar_info(array){
-    let input_id = document.getElementById("id_peludito");
-    let input_nombre = document.getElementById("nombre");
-    let input_apellido = document.getElementById("apellido");
-    let input_correo = document.getElementById("correo");
-    let input_tel = document.getElementById("telefono");
+function saveInfo(array){
+    let inputId = document.getElementById("id_peludito");
+    let inputName = document.getElementById("nombre");
+    let inputLastName = document.getElementById("apellido");
+    let inputMail = document.getElementById("correo");
+    let inputPhone = document.getElementById("telefono");
 
     
 
-    const nueva_info = new info_adoptar(array.length+1, input_nombre.value, input_apellido.value, input_correo.value, input_tel.value, input_id.value);
+    const newInfo = new InfoAdopt (array.length+1, inputName.value, inputLastName.value, inputMail.value, inputPhone.value, inputId.value);
     
-    array.push(nueva_info);
+    array.push(newInfo);
 
-    localStorage.setItem("info_adoptantes", JSON.stringify(array));
-    console.log(info_adoptantes);
+    localStorage.setItem("infoAdopters", JSON.stringify(array));
+    console.log(infoAdopters);
 
-    let form = document.getElementById("form_adoptar");
+    let form = document.getElementById("formAdopt");
     form.reset();
 }
 
-let btn_registrar = document.getElementById("enviar");
+let btnRegister = document.getElementById("send");
 
-btn_registrar.addEventListener("click", ()=>{
-    guardar_info(info_adoptantes);
+btnRegister.addEventListener("click", ()=>{
+    saveInfo(infoAdopters);
 })
 
-console.log(info_adoptantes);
+console.log(infoAdopters);
 
 
