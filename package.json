@@ -24,7 +24,7 @@
   "devDependencies": {
     "node": "^19.6.1",
     "node-sass": "^8.0.0",
-    "nodemon": "^2.0.21",
+    "nodemon": "^2.0.22",
     "npm": "^9.1.2",
     "run": "^1.4.0",
     "watch": "^1.0.2"

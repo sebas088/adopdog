@@ -37,38 +37,133 @@
     /* FIN LOGO */
 
     /* INICIO CARTSHOPPING */
-    #checkCart{
-        display: none;
+    #btnCart--open {
+        border: none;
+        color: royalblue;
+        font-size: 40px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 10px 20px;
+        transition: all .3s;
     }
-
-    &-divBtnCart {
-        width: 25px;
-        height: 25px;
+    #btnCart--open:hover {
+        cursor: pointer;
+        color: white;
+        background-color: royalblue;
+    }
+    #btnCart--open:focus {
+        outline: none;
+    }
+    
+    p {
+        line-height: 1.8;
+    }
+    .producto {
+        max-width: 20%;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 20px;
+        box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+    }
+    .precioProducto {
+        font-weight: 700;
+    }
+    .boton-agregar {
+        background-color: royalblue;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px;
+        border: none;
+    }
+    .boton-agregar:hover {
+        cursor: pointer;
+    }
+    .boton-agregar:focus {
+        outline: none;
+    }
+    
+    &-div--modalContainer {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
         display: flex;
         justify-content: center;
-        flex-direction: column;
-        margin-left: 70px;
-        margin-top: -25px;
-        transition: all 300ms ease;
+        align-items: center;
+        transition: all .5s;
+        opacity: 0;
+        visibility: hidden;
     }
-
-    &-divShopping {
-        z-index: 1;
+    
+    &-div--modalActive {
+        opacity: 1;
+        visibility: visible;
     }
-
-    .divShopping--info {
-        width: 300px;
-        height: 300px;
-        margin-top: 10px;
-        margin-bottom: -310px;
-        margin-left: -60px;
-        background-color: $color-8-group-1;
-        border: solid 0.5px $color-5-group-1;
-        border-radius: 15px;
-        box-shadow: $color-5-group-1 2px 2px 2px;
-        display: flex;
+    
+    &-div--modalCart {
         position: relative;
-        justify-content: center;
+        background-color: white;
+        min-width: 500px;
+        padding: 20px;
+        margin-top: -100%;
+        transition: all .5s;
+    }
+    
+    &-div--modal-active .modal-carrito {
+        margin-top: 0;
+    }
+    
+    &-div--modalCart h3 {
+        color: royalblue;
+        padding-bottom: 5px;
+    }
+    &-div--modalCart #btnCart--close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+        color: royalblue;
+        border: none;
+        background-color: white;
+    }
+    &-div--modalCart #btnCart--close:hover {
+        cursor: pointer;
+    }
+    &-div--modalCart #btnCart--close:focus {
+        outline: none;
+    }
+    &-div--modalCart .precioProducto {
+        padding-top: 10px;
+        
+    }
+    
+    .productoEnCarrito {
+        border-left: 5px solid lightblue;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        margin: 5px 0;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .productoEnCarrito:hover {
+        border-left: 5px solid royalblue;
+    }
+    
+    .boton-eliminar {
+        background-color: white;
+        color: red;
+        border: none;
+        font-size: 20px;
+    }
+    
+    .boton-eliminar:hover {
+        cursor: pointer;
+    }
+    .boton-eliminar:focus {
+        outline: none;
     }
     
     /* FIN CARTSHOPPING */

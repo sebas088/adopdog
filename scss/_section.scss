@@ -305,22 +305,18 @@ html {
         margin-top: 10px;
     }
 
-    /* FIN FORMULARIO ADOPCION */
+    #send {
+        margin: auto;
+        margin-top: 15px;
+        width: 150px;
+        height: 40px;
+        border-radius: 9px;
+    }
 
+    /* FIN FORMULARIO ADOPCION */
 
     /* FIN SECTIONS */
 }
-
-#send {
-    margin: auto;
-    margin-top: 15px;
-    width: 150px;
-    height: 40px;
-    border-radius: 9px;
-}
-
-
-
 
 @media (max-width: 945px) and (min-width: 684px) {
     .requisitos{

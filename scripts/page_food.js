@@ -35,17 +35,24 @@ function seeFood(array){
         let divFood = document.createElement("figure");
         divFood.innerHTML = `
         <figure class="Section-figure">
-            <a href=""><img src="../sources/images/${food.imagen}"  class="Section-imgSections"></a>
+            <a><img src="../sources/images/${food.imagen}"  class="Section-imgSections"></a>
             <figcaption>
-                <a href="" class="Section-a"> ${food.nombre}</a>
+                <a class="Section-a"> ${food.nombre}</a>
             </figcaption>
             <figcaption class="Section-figcaptionPrecio" id="${food.id}">
-                <a href="" class="Section-a"> ${food.precio}€ </a>                
+                <a class="Section-a"> ${food.precio}€ </a>                
             </figcaption>
+            
         </figure>
         `
 
         foodDiv.appendChild(divFood);
+
+        // const btn = document.getElementById(`add${food.id}`);
+
+        // btn.addEventListener("click", () => {
+        //     agregarAlCarrito(food.id);
+        // })
     }
 }
 
